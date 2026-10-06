@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gankya: find where a vehicle went in seconds</title>
+  <meta name="description" content="Gankya is the intelligence layer on top of the CCTV system you already have (Hikvision, CP Plus, Dahua or ONVIF): follow any vehicle from camera to camera in seconds, with every search logged. 30-day pilot on your own cameras.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="canonical" href="https://gankya.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gankya: find where it went, in seconds">
+  <meta property="og:description" content="The intelligence layer on top of your existing CCTV: find where a vehicle went in seconds. Works with your Hikvision, CP Plus, Dahua or ONVIF recorder.">
+  <meta property="og:url" content="https://gankya.com/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply the saved theme before first paint so the page doesn't flash.
+    try { var t = localStorage.getItem('ct-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Gankya","applicationCategory":"SecurityApplication","operatingSystem":"Web","url":"https://gankya.com/","description":"The intelligence layer on top of the CCTV system a site already has: vehicle tracking across cameras, alerts and accountable investigations for large townships, industrial parks and campuses in India.","offers":[{"@type":"Offer","name":"Society Gate","price":"12000","priceCurrency":"INR","description":"Per site per month, up to 32 cameras. No GST charged while Gankya is not GST-registered."},{"@type":"Offer","name":"Township Pro","price":"35000","priceCurrency":"INR","description":"Per site per month, up to 100 cameras. No GST charged while Gankya is not GST-registered."},{"@type":"Offer","name":"Enterprise","price":"100000","priceCurrency":"INR","description":"From, per site per month, up to 150 cameras; extra cameras by quote. No GST charged while Gankya is not GST-registered."}]}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Gankya home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0f766e"/><path d="M7 23 L13 17 L19 19 L25 9" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="23" r="3" fill="#fff"/><circle cx="13" cy="17" r="2.4" fill="#fff"/><circle cx="19" cy="19" r="2.4" fill="#fff"/><circle cx="25" cy="9" r="3" fill="#fbbf24"/></svg>
+      Gankya
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it helps</a>
+      <a href="#responsible">Responsible AI</a>
+      <a href="#status">What works today</a>
+      <a href="#pricing">Pricing</a>
+      <a href="blog/">Blog</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch light or dark theme" id="themeToggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm" href="#pilot">Book a pilot</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <div class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">For parks, campuses &amp; large townships</span>
+        <h1>Find where a vehicle went. In seconds.</h1>
+        <p class="lede">Gankya is the intelligence layer on top of the CCTV system you already have. It connects to your recorder (Hikvision, CP Plus, Dahua or any ONVIF recorder), so you can type a vehicle number and see every camera it passed, in order, without hours of rewinding footage.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#pilot">Book a 30-day pilot</a>
+          <a class="btn btn-ghost" href="#how">See how it helps</a>
+        </div>
+        <p class="fine">Connects to the recorder you already have. Every search logged against the person who made it. Your recordings stay on your recorder.</p>
+      </div>
+
+      <!-- Abstract illustration: not a real screen, no real data -->
+      <div class="illus" role="img" aria-label="Illustration (not real data): searching a vehicle number shows its route across five cameras, from the main gate to Tower 5.">
+        <div class="search-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span class="plate">XX 00 AB 1234</span>
+          <span class="found">Found · 4 cameras</span>
+        </div>
+        <svg class="map-svg" viewBox="0 0 360 214" aria-hidden="true">
+          <path class="road" d="M30 170 L120 170 L180 90 L300 60"/>
+          <path class="road" d="M120 170 L250 150 L330 190"/>
+          <path class="road" d="M180 90 L250 150"/>
+          <path class="road" d="M300 60 L330 190"/>
+          <path class="trail" d="M30 170 L120 170 L180 90 L300 60"/>
+          <circle class="cam on" cx="30" cy="170" r="9"/>
+          <circle class="cam on" cx="120" cy="170" r="8"/>
+          <circle class="cam on" cx="180" cy="90" r="8"/>
+          <circle class="cam on" cx="300" cy="60" r="9"/>
+          <circle class="cam" cx="250" cy="150" r="8"/>
+          <circle class="cam next" cx="330" cy="190" r="9"/>
+          <text x="14" y="195">Main Gate</text>
+          <text x="96" y="195">Clubhouse</text>
+          <text x="130" y="76">Tower 2 Rd</text>
+          <text x="262" y="44">Tower 5</text>
+          <text x="226" y="176">Pool</text>
+          <text x="250" y="200">Back Gate</text>
+        </svg>
+        <ol class="timeline">
+          <li><span>Main Gate</span><span>10:42 pm</span></li>
+          <li><span>Clubhouse Road</span><span>10:43 pm</span></li>
+          <li><span>Tower 2 Road</span><span>10:44 pm</span></li>
+          <li><span>Tower 5 parking</span><span>10:46 pm</span></li>
+          <li class="next"><span>Check next: Back Gate</span><span>not seen yet</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEM / BEFORE-AFTER -->
+  <section class="alt" aria-labelledby="problem-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="problem-h">Your campus has cameras. Does it have answers?</h2>
+        <p class="muted">A two-wheeler goes missing. A visitor's car was seen near the play area at midnight. A truck left a gate it never should have used. Today, finding out what happened means rewinding one camera at a time.</p>
+      </div>
+      <div class="grid grid-2 compare">
+        <div class="card">
+          <h3><span class="tag tag-bad">Without Gankya</span> Hours of scrubbing</h3>
+          <ul>
+            <li>Guard rewinds the gate camera and finds the car.</li>
+            <li>Guesses where it went, then rewinds another camera. Then another.</li>
+            <li>Hours later, half an answer, and residents are still waiting.</li>
+            <li>Nobody knows who looked at which footage, or why.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag tag-good">With Gankya</span> Answers in seconds</h3>
+          <ul>
+            <li>Type the vehicle number, even part of it.</li>
+            <li>See every camera it passed, in order, with times and snapshots.</li>
+            <li>See which camera to check next, and whether it has left.</li>
+            <li>Every search is logged with a reason, under the person's own login.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT HELPS -->
+  <section id="how" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="how-h">What changes for your security team</h2>
+        <p class="muted">Simple enough for any guard. Detailed enough for the committee and the police.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div>
+          <h3>Follow any vehicle</h3>
+          <p>From the main gate to the tower parking or loading bay, one search shows the whole route across your cameras, even with only part of the number.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg></div>
+          <h3>Alerts that matter</h3>
+          <p>A watchlisted vehicle at the gate. A visitor driving around at 2 a.m. A car that came in and never left. A camera that has gone dark. Every alert says why, in plain words, on the control-room screen and, if you choose, by e-mail or to your own systems. <span class="muted">(WhatsApp alerts are in testing.)</span></p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+          <h3>"Is it still inside?"</h3>
+          <p>See which visitor vehicles are on the premises right now, and which never reached an exit gate.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+          <h3>Evidence the police can use</h3>
+          <p>Export a case as a PDF report: timeline, snapshots, a SHA-256 fingerprint for every file, the search record, and a Section 63 BSA certificate page ready to fill in and sign.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h3M19 12h3M12 2v3M12 19v3"/><circle cx="12" cy="12" r="6"/></svg></div>
+          <h3>On top of what you own</h3>
+          <p>Connects to your Hikvision, CP Plus, Dahua or ONVIF recorder and picks up its cameras in minutes. No rip-and-replace. We confirm your model in the site check.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Accountable searches</h3>
+          <p>No search without a reason. Every lookup is recorded against the person who made it, in a log that can't be edited and shows if anyone tampers with it, so management can show the system isn't misused.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.5a3.2 3.2 0 0 1 0 7M21 20c0-2.6-1.7-4.9-4-5.7"/></svg></div>
+          <h3>Right access for each person</h3>
+          <p>Everyone signs in with their own account. Guards see alerts, plate search and vehicle routes; investigators run cases; admins manage people and cameras. Idle screens sign themselves out, while the guard's gate screen stays on for the shift. Guard screens switch to Hindi.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M8 15h3"/></svg></div>
+          <h3>Knows your regular vehicles</h3>
+          <p>Upload your residents', staff or fleet vehicle list from Excel or CSV, with a preview before anything is saved, so regular vehicles don't raise false alerts. The list also helps with unclear number-plate reads, and every such correction is clearly marked.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+          <h3>Deleted on schedule</h3>
+          <p>Sighting records are deleted automatically after 30 days, or the period your site chooses. It is on from day one, with nothing to set up. Records in an open case are kept until it closes, and the search log is kept for at least a year.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+          <h3>A monthly report for the committee</h3>
+          <p>One PDF for the meeting: alerts, camera uptime, and how many lookups were made, by whom and for what reason. Counts only, with no vehicle numbers or flats in it.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14l2 2 4-4"/></svg></div>
+          <h3>Data requests, handled</h3>
+          <p>When a resident or visitor asks what you hold about their vehicle, find it, export a copy with a response letter, or erase it. Legal holds keep records needed for a police or court matter. CCTV signs print in English and Hindi.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Guided setup, with camera checks</h3>
+          <p>A step-by-step setup takes your site from first sign-in to working cameras. Testing a camera tells you if its picture is too small or too dark to read number plates, before you rely on it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="alt" aria-labelledby="steps-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="steps-h">How a pilot works</h2>
+      </div>
+      <div class="grid grid-3 steps">
+        <div class="card"><h3>Site check and plan</h3><p>We walk your site, look at your cameras and recorder, confirm Gankya can connect to your recorder model, tell you honestly what is likely to work, and agree up to 40 cameras and the success measures with you.</p></div>
+        <div class="card"><h3>30 days on your cameras</h3><p>We set up Gankya on a computer at your site that we lend you, next to your existing system. Your recordings stay exactly as they are.</p></div>
+        <div class="card"><h3>Train your team, measure results</h3><p>We train your team on site. At the end you get a written report with your numbers: what worked, what didn't, and time saved per incident.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESPONSIBLE AI & PRIVACY (only claims true today; roadmap items labelled) -->
+  <section id="responsible" aria-labelledby="responsible-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Responsible AI &amp; privacy</span>
+        <h2 id="responsible-h">Accountable by design, not as an afterthought</h2>
+        <p class="muted">Designed around the principles of India's Digital Personal Data Protection (DPDP) Act, 2023. Your site stays in control of its data.</p>
+      </div>
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>A person always decides</strong><span class="muted">Gankya suggests and explains. It never takes action on its own.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Every search needs a reason</strong><span class="muted">It's written, with the signed-in person's name, to an audit log that can't be edited or deleted, and an admin can check that nobody has tampered with it.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Explainable alerts</strong><span class="muted">Every alert says in plain words why it fired.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Evidence, not guesses</strong><span class="muted">Results come with the snapshot behind them. Evidence reports carry a fingerprint for every file, so changes can be detected.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Data stays with you</strong><span class="muted">Recordings stay on your recorder; Gankya does not record or store video. Pilots run on a computer at your site. We never sell or pool data.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Anonymous by default</strong><span class="muted">Anyone not enrolled with consent is only an anonymous ID.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Kept only as long as needed</strong><span class="muted">Sighting records are deleted automatically after 30 days, or the period your site sets.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Personal logins and roles</strong><span class="muted">No shared passwords. Each person sees only what their role needs, and idle screens sign out on their own.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>People can ask about their data</strong><span class="muted">Requests for a copy or erasure are recorded, answered with a letter and tracked to a due date.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Answerable to the committee</strong><span class="muted">A monthly report shows who looked things up and why.</span></div></li>
+      </ul>
+      <p class="fine" style="margin-top:16px">Coming soon: a consent registry, and supervisor and committee roles. Sign and notice texts are templates: have your advisor review them.</p>
+    </div>
+  </section>
+
+  <!-- TODAY VS ROADMAP -->
+  <section class="alt" id="status" aria-labelledby="status-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="status-h">What works today, and what's next</h2>
+        <p class="muted">We'd rather be straight with you. Everything on the left is in the product and works on our demos and test video. The recorder connection is tested against simulated Hikvision, CP Plus/Dahua and ONVIF recorders. Our first real-site pilots are where we prove it on your cameras and your recorder.</p>
+      </div>
+      <div class="grid grid-2 compare">
+        <div class="card">
+          <h3><span class="tag tag-good">Today</span> In the product now</h3>
+          <ul>
+            <li>Follow a vehicle across cameras, with its route in order</li>
+            <li>Search by full or partial number, colour, camera and time</li>
+            <li>"Check this camera next" suggestions</li>
+            <li>"Still inside" view for vehicles that never left</li>
+            <li>Alerts that explain themselves, on screen and by e-mail or to your own systems</li>
+            <li>Camera-offline alerts</li>
+            <li>Personal logins with roles: admin, investigator, guard</li>
+            <li>Automatic sign-out of idle screens, with a shift-long gate screen for guards</li>
+            <li>Reason-required searches, logged against the signed-in person in a tamper-evident log</li>
+            <li>Committee monthly report</li>
+            <li>Data requests: find, export or erase a person's records, with a response letter and legal holds</li>
+            <li>CCTV sign and privacy notice in English and Hindi</li>
+            <li>Automatic deletion after 30 days, with no setup needed (your site can change it)</li>
+            <li>Guided setup: connect the recorder, tick the cameras, see each one's picture</li>
+            <li>Resident and regular-vehicle list import from Excel or CSV, which also helps with unclear plate reads</li>
+            <li>Hindi mode on guard screens</li>
+            <li>Police evidence PDF with SHA-256 fingerprints and a Section 63 BSA certificate page</li>
+            <li>Runs on a computer at your site</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag tag-bad">Coming soon</span> In testing and on the roadmap</h3>
+          <ul>
+            <li>Measured accuracy on real site footage, including night and IR (in the first pilots)</li>
+            <li>WhatsApp alerts (in testing now)</li>
+            <li>Graph views: a map of your site, a vehicle's movement, and an incident with a time slider (in testing now)</li>
+            <li>Snapshots and short incident replays fetched from your recorder (in testing now)</li>
+            <li>Keeps working through internet outages and catches up later (built, tested in our lab; first on-site hardware comes with the pilots)</li>
+            <li>Guard mobile app</li>
+            <li>Supervisor and committee roles</li>
+            <li>A consent registry</li>
+            <li>Visitor-pass link with gate apps</li>
+            <li>Bengali and other regional languages</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO -->
+  <section aria-labelledby="who-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="who-h">Built for sites with a real security team</h2></div>
+      <div class="grid grid-3">
+        <div class="card"><h3>Industrial &amp; logistics parks</h3><p>Trucks, contractors, visitors, many gates. Know where a vehicle went, which bay it stopped at, and whether it has left.</p></div>
+        <div class="card"><h3>Tech parks &amp; campuses</h3><p>Thousands of vehicles a day and a security team that answers to management. Faster incident reports, with a clear record of who searched and why.</p></div>
+        <div class="card"><h3>Housing townships &amp; FM companies</h3><p>From a society's main gates to a large township's control room. Answer residents quickly after an incident, and show the committee the system is used responsibly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING (source of truth: sales/01-price-sheet.md v2.0) -->
+  <section class="alt" id="pricing" aria-labelledby="pricing-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="pricing-h">Simple pricing, after a 30-day pilot</h2>
+        <p class="muted">Every plan has the same software, setup and training. Plans differ only in how many cameras are connected. One site is one property with one control room.</p>
+      </div>
+      <div class="plans">
+        <article class="card plan" aria-labelledby="plan-sg">
+          <h3 id="plan-sg">Society Gate</h3>
+          <p class="plan-for">For housing societies and smaller townships</p>
+          <p class="plan-price">₹12,000 <span>per site per month</span></p>
+          <p class="plan-cams">Up to 32 cameras</p>
+          <ul class="checks">
+            <li>Gates and main internal roads</li>
+            <li>Resident vehicle list, Hindi guard screens</li>
+            <li>Committee monthly report</li>
+          </ul>
+        </article>
+        <article class="card plan plan-mid" aria-labelledby="plan-tp">
+          <h3 id="plan-tp">Township Pro</h3>
+          <p class="plan-for">For large housing townships</p>
+          <p class="plan-price">₹35,000 <span>per site per month</span></p>
+          <p class="plan-cams">Up to 100 cameras</p>
+          <ul class="checks">
+            <li>Several gates, towers and internal roads</li>
+            <li>Resident vehicle list, Hindi guard screens</li>
+            <li>Committee monthly report</li>
+          </ul>
+        </article>
+        <article class="card plan" aria-labelledby="plan-en">
+          <h3 id="plan-en">Enterprise</h3>
+          <p class="plan-for">For industrial parks, tech parks and campuses</p>
+          <p class="plan-price"><small>from</small> ₹1,00,000 <span>per site per month</span></p>
+          <p class="plan-cams">Up to 150 cameras, extra cameras by quote</p>
+          <ul class="checks">
+            <li>Trucks, visitors and contractors across many gates</li>
+            <li>Personal logins and roles, tamper-evident search log</li>
+            <li>Police evidence report for every case</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="card founding" aria-labelledby="founding-h">
+        <span class="eyebrow">Founding-customer offer</span>
+        <h3 id="founding-h">Our first 3 customers get 30% off for 12 months</h3>
+        <p>In return, you agree to a written case study about your site and to be a reference for other buyers. The case study states only results we actually measured at your site, with no invented numbers, and nothing is published until you approve it.</p>
+        <p class="fine">Founding prices for the first 12 months: Society Gate ₹8,400 · Township Pro ₹24,500 · Enterprise from ₹70,000 per site per month.</p>
+      </div>
+
+      <ul class="checks plan-notes">
+        <li>Start with a 30-day pilot on up to 40 cameras: ₹25,000 flat, credited against your first months if you sign a 12-month plan.</li>
+        <li>On-site setup (free with a 12-month plan) and team training included. No new cameras required to start.</li>
+      </ul>
+      <p class="fine">GST: Gankya is not GST-registered yet, so no GST is charged now. GST will apply once Gankya is GST-registered.</p>
+      <p class="fine">Outside India, per site per month (exchange rates of 4 October 2026, rounded): Society Gate US$125 · €110 · £95 · AED 455 · S$160. Township Pro US$365 · €325 · £275 · AED 1,350 · S$465. Enterprise from US$1,050 · €900 · £800 · AED 3,800 · S$1,350. Several sites: ask for a quote.</p>
+    </div>
+  </section>
+  <!-- PILOT + FORM -->
+  <section class="pilot" id="pilot" aria-labelledby="pilot-h">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Now choosing first pilot sites</span>
+        <h2 id="pilot-h">Book a 30-day pilot for your site</h2>
+        <p class="muted">We're choosing a small number of parks, campuses and large townships in India for our first pilots. ₹25,000 flat for 30 days, credited against your first months if you continue, no obligation, and you work directly with the founder.</p>
+        <ul class="checks">
+          <li>On-site camera check</li>
+          <li>Gankya on up to 40 cameras (for example your gates and a main road), set up by us on a computer we lend you</li>
+          <li>Personal logins for your team, and guard training on site</li>
+          <li>CCTV sign and privacy notice in English and Hindi, printed from Gankya with your site name (templates for your advisor to check)</li>
+          <li>A written results report with your numbers for your management at the end</li>
+        </ul>
+        <p class="fine">Prefer to talk? Email <a href="mailto:hello@gankya.com">hello@gankya.com</a>.</p>
+      </div>
+
+      <div class="card">
+        <!--
+          FORM BACKEND: set data-endpoint to your free form service URL (see site/README.md).
+          While it still says YOUR_FORM_ID, the form opens the visitor's email app instead (mailto fallback).
+          Without JavaScript the browser's native mailto form submission is used.
+        -->
+        <form id="pilotForm" action="mailto:hello@gankya.com?subject=Gankya%20pilot%20request" method="post" enctype="text/plain"
+              data-endpoint="" novalidate>
+          <div class="row-2">
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="role">Your role</label>
+              <select id="role" name="role" required>
+                <option value="">Choose one</option>
+                <option>RWA / apex body member</option>
+                <option>Facility / estate manager</option>
+                <option>Security head / supervisor</option>
+                <option>Industrial or logistics park management</option>
+                <option>Tech park / SEZ management</option>
+                <option>Campus / hospital administration</option>
+                <option>Builder / developer</option>
+                <option>CCTV installer (partner)</option>
+                <option>Resident</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="society">Site name (township / park / campus)</label><input id="society" name="society" required></div>
+          <div class="row-2">
+            <div class="field"><label for="city">City</label><input id="city" name="city" autocomplete="address-level2" required></div>
+            <div class="field"><label for="cameras">Approx. number of cameras <span class="opt">(optional)</span></label>
+              <select id="cameras" name="cameras">
+                <option value="">Not sure</option>
+                <option>Up to 32</option>
+                <option>33 to 100</option>
+                <option>101 to 150</option>
+                <option>More than 150</option>
+              </select>
+            </div>
+          </div>
+          <div class="row-2">
+            <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+            <div class="field"><label for="email">Email <span class="opt">(optional)</span></label><input id="email" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="field"><label for="message">What would you like Gankya to help with? <span class="opt">(optional)</span></label><textarea id="message" name="message"></textarea></div>
+          <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="consent"><input type="checkbox" name="consent" value="yes" required> I agree that Gankya may contact me about a pilot. See the <a href="privacy.html">privacy notice</a>.</label>
+          <button class="btn btn-primary" type="submit">Request a pilot</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="alt" id="faq" aria-labelledby="faq-h">
+    <div class="wrap" style="max-width:820px">
+      <h2 id="faq-h">Questions we get asked</h2>
+      <details><summary>Is Gankya proven on real sites?</summary><p>Not yet, and we won't pretend otherwise. It works on our demos and test video, and the recorder connection is tested against simulated recorders. Our first pilots will verify it on your real recorder and measure how it performs on real site cameras, including at night. That's why we start with a short pilot, and the report gives you your own numbers, good or bad.</p></details>
+      <details><summary>Do we need new cameras?</summary><p>No. Gankya connects to the recorder you already have (Hikvision, CP Plus, Dahua or any ONVIF recorder) and adds the intelligence on top. The site check and pilot confirm your model and which cameras work best.</p></details>
+      <details><summary>Does our data go to the cloud?</summary><p>Your recordings stay on your own recorder; Gankya does not record or store video. For pilots we run Gankya on a computer at your site, so its records (sightings and small snapshots) stay with you too. Incident replay is in testing: when someone replays an incident, the site computer fetches that short clip from your recorder and deletes it within 15 minutes. We never sell or pool data between customers.</p></details>
+      <details><summary>Is this aligned with India's DPDP Act?</summary><p>Gankya is designed around DPDP Act principles: a clear purpose, consent for anyone enrolled, minimal data, personal logins, a tamper-evident access log, and automatic deletion after a retention period your site sets (30 days by default). When someone asks for a copy or erasure of their data, you can find, export or erase it in the product, with a response letter. Your site stays in charge of its data, and we act on your instructions. A consent registry is coming soon. We suggest a quick review with your own advisor.</p></details>
+      <details><summary>Can someone misuse it to watch people?</summary><p>It's harder to misuse than plain CCTV. Everyone has their own login, every search needs a reason, and it goes into a log that can't be edited and shows if anyone tampers with it, so management can see exactly who searched for what, when and why. The committee gets a monthly summary. Guards can't open people's profiles or cases at all.</p></details>
+      <details><summary>How much does it cost?</summary><p>There are three plans, per site per month: Society Gate ₹12,000 for up to 32 cameras, Township Pro ₹35,000 for up to 100 cameras, and Enterprise from ₹1,00,000 for up to 150 cameras (extra cameras by quote). Our first 3 customers get 30% off for 12 months in return for a case study and a reference. The 30-day pilot is ₹25,000 flat, credited against your first months if you sign a 12-month plan. Gankya is not GST-registered yet, so no GST is charged now; GST will apply once Gankya is GST-registered. We'll confirm a written quote for your site after the site check.</p></details>
+      <details><summary>Will our guards manage it?</summary><p>Searching is a single box: type a number, see the trail. Each guard has their own login, and guard screens switch between English and Hindi. We train your team on site during the pilot.</p></details>
+      <details><summary>What do we give the police?</summary><p>A case exports as a PDF report with the timeline, snapshots, a SHA-256 fingerprint for every file and the search record, plus a blank certificate page under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, for you to fill in and sign. Please have your lawyer check the certificate wording before you rely on it.</p></details>
+      <details><summary>What if a camera stops working?</summary><p>The control-room screen shows a "camera offline" alert when a connected camera goes quiet, so a dead camera doesn't go unnoticed for weeks. The alert can also go out by e-mail or to your own systems. WhatsApp alerts are in testing.</p></details>
+      <details><summary>What if it makes a mistake?</summary><p>Every result comes with the camera snapshot behind it, and a person always decides what to do. Gankya speeds up your team's judgement. It doesn't replace it.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>© <span id="yr">2026</span> Gankya · Made in India for Indian communities<br><small class="muted">Hikvision, CP Plus, Dahua and ONVIF are trademarks of their owners. Gankya is not affiliated with them.</small></div>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy</a>
+      <a href="blog/">Blog</a>
+      <a href="mailto:hello@gankya.com">hello@gankya.com</a>
+      <a href="#pilot">Book a pilot</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Theme toggle: remembers the choice in this browser only.
+  var root = document.documentElement, btn = document.getElementById('themeToggle');
+  btn.addEventListener('click', function () {
+    var cur = root.getAttribute('data-theme') ||
+      (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = cur === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('ct-theme', next); } catch (e) {}
+  });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Pilot form: free form backend if configured, otherwise the mailto fallback.
+  var form = document.getElementById('pilotForm'), status = document.getElementById('formStatus');
+  var endpoint = form.getAttribute('data-endpoint') || '';
+  var configured = endpoint && endpoint.indexOf('YOUR_') === -1;
+
+  function say(msg, cls) { status.textContent = msg; status.className = 'form-status ' + (cls || ''); }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) { say('Please fill in the required fields and tick the consent box.', 'err'); form.reportValidity(); return; }
+    var data = new FormData(form);
+    if (data.get('_gotcha')) return; // bot trap
+
+    if (configured) {
+      say('Sending…');
+      fetch(endpoint, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); form.reset(); say('Thank you! We will call or WhatsApp you within 2 working days.', 'ok'); })
+        .catch(function () { mailtoFallback(data); });
+    } else {
+      mailtoFallback(data);
+    }
+  });
+
+  function mailtoFallback(data) {
+    var lines = ['Name', 'role', 'society', 'city', 'cameras', 'phone', 'email', 'message'].map(function (k) {
+      return k.charAt(0).toUpperCase() + k.slice(1) + ': ' + (data.get(k.toLowerCase()) || '-');
+    });
+    var href = 'mailto:hello@gankya.com?subject=' + encodeURIComponent('Gankya pilot request: ' + (data.get('society') || '')) +
+      '&body=' + encodeURIComponent('Hi Gankya team,\n\nI would like to discuss a 30-day pilot.\n\n' + lines.join('\n'));
+    window.location.href = href;
+    say('Your email app should open with the details filled in. Just press send. If nothing opens, email hello@gankya.com.', 'ok');
+  }
+})();
+</script>
+</body>
+</html>
